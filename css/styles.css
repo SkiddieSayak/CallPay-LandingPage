@@ -35,6 +35,7 @@ html {
 }
 
 body, p {
+	animation: mymove 5s;
 	color: #f1f1f8; 
 	font: 400 0.875rem/1.375rem "Open Sans", sans-serif;
 }
@@ -61,8 +62,43 @@ body, p {
 .indent {
 	padding-left: 1.25rem;
 }
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 600px; 
+}
+
+#slide {
+    position: absolute;
+    left: -600px;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 1s;
+    animation: slide 0.5s forwards;
+    animation-delay: 1s;
+}
+.spin-animation {
+	transition: transform 1.2s linear;
+}
+.spin-animation:hover{
+	transform: rotate(360deg);
+}
+.zoom{
+	transition: transform .2s;
+}
+.zoom:hover{
+	transform: scale(1.5);
+}
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
 
 h1 {
+	animation: mymove 5s;
 	color: #f1f1f8;
 	font: 700 2.5rem/2.875rem "Montserrat", sans-serif;
 }
