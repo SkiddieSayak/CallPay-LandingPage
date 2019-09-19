@@ -83,6 +83,7 @@ body, p {
 .spin-animation:hover{
 	transform: rotate(360deg);
 }
+
 .zoom{
 	transition: transform .2s;
 }
@@ -171,7 +172,9 @@ a.white {
 	color: #00c9db;
 	text-decoration: none;
 }
-
+.feature{
+	color: black;
+}
 .btn-solid-lg {
 	display: inline-block;
 	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
@@ -814,7 +817,6 @@ input[type='checkbox'] {
 	margin-right: 0.5rem;
 	margin-bottom: 1.25rem;
 }
-
 
 /****************************/
 /*     05. Testimonials     */
