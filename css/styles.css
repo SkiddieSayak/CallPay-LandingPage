@@ -149,10 +149,12 @@ a.white {
 
 .testimonial-text {
 	font: italic 400 1rem/1.5rem "Open Sans", sans-serif;
+	color: black;
 }
 
 .testimonial-author {
 	font: 700 1rem/1.5rem "Montserrat", sans-serif;
+	color: black;
 }
 
 .btn-solid-reg {
@@ -791,7 +793,7 @@ input[type='checkbox'] {
 /*    04. Header     */
 /*********************/
 .header {
-	background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('../images/header-background.jpg') center center no-repeat;
+	background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('../images/home-banner-bg.png') center center no-repeat;
 	background-size: cover;
 }
 
@@ -829,6 +831,7 @@ input[type='checkbox'] {
 	padding-top: 6.875rem;
 	padding-bottom: 6.375rem;
 	background-color: #262431;
+	background:url('../images/hex-pattern.svg')  no-repeat;
 }
 
 .slider-1 .slider-container {
@@ -2130,3 +2133,52 @@ a:hover.back-to-top {
 	/* end of extra pages */
 }
 /* end of min-width width 1200px */
+
+/* ==============
+    Start Features CSS 
+==================================== */
+.features-area {
+  padding-bottom: 70px;
+}
+
+.single-features {
+  -webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.06);
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.single-features i {
+  font-size: 40px;
+  display: inline-block;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.single-features h3 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.single-features p {
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.single-features:hover i, .single-features:hover h3, .single-features:hover p {
+  color: #ffffff;
+}
+
+/* ==============
+    End Features CSS 
+==================================== */
